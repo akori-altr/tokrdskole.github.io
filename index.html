@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokerud Skole</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- init custom fonts to mem -->
+    <style>
+            @font-face {
+                font-family: 'inter';
+                src: url('/media/fonts/inter-reg.ttf') format('truetype');
+                font-weight: 400;
+                font-style: normal;
+                font-display: swap;
+                font-optical-sizing: auto;
+            }
+
+            @font-face {
+                font-family: 'inter-b';
+                src: url('/media/fonts/inter-bold.ttf') format('truetype');
+                font-weight: 700;
+                font-style: normal;
+                font-display: swap;
+                font-optical-sizing: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbr">
+          <img src="/media/OsloskolenLogo.svg" class="oslosvg">
+    <a class="active" href="#home">Portal Login</a>
+  <a href="#news" class="links">Om Oss</a>
+  <a href="#contact" class="links">Fagtillbud</a>
+  <a href="#about" class="links">Kontakt Oss</a>
+    </nav>
+
+    <!-- render progrssive blur. may be unstable on gecko/firefox or webkit/safari. chromium works just fine hehe :3 --->
+    <div class="wrapper">
+        <div class="progressive-blur">
+            <div class="blur"></div>
+            <div class="blur"></div>
+            <div class="blur"></div>
+            <div class="blur"></div>
+            <div class="blur"></div>
+        </div>
+        <img src="/media/tokerud.webp" alt="Custom Image" />
+    </div>
+ 
+    <div id="header">
+        <h1>Tokerud</h1>
+        <h1>Skole</h1>
+    
+    </div>
+<div id="main-content">
+    <h1 style="margin-top: 50vh;" id="hea1">Nyheter</h1>
+<div class="sear">
+   <input type="text" placeholder="Søk nyheter..." class="textb">
+</div>
+<div class="news"></div>
+</div>
+
+</body>
+</html>

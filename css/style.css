@@ -1,0 +1,174 @@
+/* Reset default margins and prevent horizontal scrolling */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    text-align: center;
+    font-family: inter;
+    background-color: #ffffff;
+    color: rgb(255, 255, 255);
+}
+
+.addr {
+    font-size: 2vh;
+    letter-spacing: 1px;
+    color: #363a4f;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+#header {
+margin-top: -70vh;
+}
+
+#hea1 {
+    margin-left: 10vh;
+}
+
+.sear {
+  height: 50px;
+  width: 500px;
+  align-self: center;
+  background-color: #ECE6F0;
+margin: 0 auto;     /* horizontally centers the element */
+  display: block;     /* ensures margin auto works */
+border-radius: 50px;
+}
+
+.textb {
+    background-color: #363a4f00;
+    border-color: #363a4f00;
+    width: auto;
+
+}
+
+
+.news {
+  height: 200px;
+  width: 200px;
+  background-color: #555;
+border-radius: 28px;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 8vh;
+    justify-content: space-evenly;
+    background-color: #ee99a0;
+    align-items: center;
+
+}
+
+nav img{
+    height: 50px;
+}
+
+.oslosvg {
+    height: 6vh;
+
+}
+
+/*
+img {
+    display: block;
+    width: 70%;
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+}
+*/
+
+
+
+
+
+/* Center text under the image */
+h1,
+p {
+    margin: 20px auto;
+    text-align: left;
+    max-width: 90%;
+}
+h1 {
+    font-size: 5vh;
+}
+
+p {
+    font-size: 2vh;
+}
+
+.wrapper {
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+
+}
+
+/*
+img {
+    width: 100%;
+    height: auto;
+    transform: scale(1.2);
+}
+*/
+.progressive-blur {
+    position: absolute;
+    z-index: 6;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    inset: auto 0 0 0;
+    transform: scale(1.2);
+}
+
+.blur {
+    background: url('/media/tokerud.webp');
+    background-size: cover;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.progressive-blur>div:nth-child(1) {
+    filter: blur(1px);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 16%, rgba(0, 0, 0, 1) 32.8%, rgba(0, 0, 0, 1) 49.6%, rgba(0, 0, 0, 0) 66.4%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 16%, rgba(0, 0, 0, 1) 32.8%, rgba(0, 0, 0, 1) 49.6%, rgba(0, 0, 0, 0) 66.4%);
+    z-index: 1;
+}
+
+.progressive-blur>div:nth-child(2) {
+    filter: blur(2px);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 32.8%, rgba(0, 0, 0, 1) 49.6%, rgba(0, 0, 0, 1) 66.4%, rgba(0, 0, 0, 0) 83.2%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 32.8%, rgba(0, 0, 0, 1) 49.6%, rgba(0, 0, 0, 1) 66.4%, rgba(0, 0, 0, 0) 83.2%);
+    z-index: 2;
+}
+
+.progressive-blur>div:nth-child(3) {
+    filter: blur(4px);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 49.6%, rgba(0, 0, 0, 1) 66.4%, rgba(0, 0, 0, 1) 83.2%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 49.6%, rgba(0, 0, 0, 1) 66.4%, rgba(0, 0, 0, 1) 83.2%, rgba(0, 0, 0, 0) 100%);
+    z-index: 3;
+}
+
+.progressive-blur>div:nth-child(4) {
+    filter: blur(8px);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 66.4%, rgba(0, 0, 0, 1) 83.2%, rgba(0, 0, 0, 1) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 66.4%, rgba(0, 0, 0, 1) 83.2%, rgba(0, 0, 0, 1) 100%);
+    z-index: 4;
+}
+
+.progressive-blur>div:nth-child(5) {
+    filter: blur(16px);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 83.2%, rgba(0, 0, 0, 1) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 83.2%, rgba(0, 0, 0, 1) 100%);
+    z-index: 5;
+}
+
+#main-content {
+    color: black;
+}
